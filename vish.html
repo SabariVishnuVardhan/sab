@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic Website</title>
+    <style>
+      body {.
+      font-family: Arial, sans-serif;
+      background-color: #c3eb13;
+      font-size: large;
+  }
+  
+  header {
+      background-color: #ab409d;
+      padding: 20px;
+  }
+  
+  nav ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  nav ul li {
+      display: inline;
+      margin-right: 10px;
+  }
+  
+  nav ul li a {
+      color: rgb(14, 231, 54);
+      text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+      color: #ebe013;
+  }
+  
+  section {
+      padding: 20px;
+  }
+  
+  section h1, section h2 {
+      color: #e81e0c;
+  }
+  
+  section p {
+      color: #d81681;
+  }
+  
+  form {
+      margin-top: 20px;
+  }
+  
+  form label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  
+  form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+  
+  form button {
+      background-color: #6913eb;
+      color: rgb(29, 209, 218);
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  form button:hover {
+      background-color: #48e813;
+  }
+     </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">All Courses</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#registration">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to the Basic Website</h1>
+            <p>This is a basic website with top content like home, all course, blog, contact, and code.</p>
+        </section>
+        <section id="courses">
+            <h2>All Courses</h2>
+            <ul>
+                <li>Course 1</li>
+                <li>Course 2</li>
+                <li>Course 3</li>
+            </ul>
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>This is the blog section where you can read articles and news about the website and its content.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or need assistance, please feel free to contact us.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="registration">
+            <h1>Registration</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <tr>
+            <td>TYPE:</td>
+            <td>
+                <input type="radio" name="TYPE"required>HOSTELLER
+                <input type="radio" name="TYPE"required>DAYSCHOLAR
+            </td>
+        </tr>
+        <tr>
+            <td>SELECT YOUR MARTIAL ART:</td>
+            <td>
+                <select name="MARTIAL"required>
+                    <option>Choose</option>
+                    <option>SILAMBAM</option>
+                    <option>BOXING</option>
+                    <option>KARATE</option>
+                    <option>TAEKWONDO</option>
+                    <option>JUDO</option>
+                    <option>WUSHU</option>
+                </select>
+
+            </td>
+        </tr>
+        <button type="submit">Submit</button>
+
+                </form>
+            <p>This is a basic website with top content like home, all course, blog, contact, and code.</p>
+        </section>
+    </main>
+</body>
+</html>
+<ul>
+  <li>
+    <a [routerLink]="['all-course']">all course</a>
+  </li>
+  <li>
+    <a [routerLink]="['']">all contact</a>
+  </li>
+  <li>
+    <a [routerLink]="['blog']">blog</a>
+  </li>
+  <li>
+    <a [routerLink]="['registration']">Registration</a>
+  </li>
+
+</ul>
+<router-outlet></router-outlet>
